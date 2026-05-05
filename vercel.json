@@ -8,8 +8,25 @@
   ],
   "routes": [
     {
+      "src": "/v/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/y/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/f/(.*)",
+      "dest": "index.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "index.js"
     }
-  ]
+  ],
+  "functions": {
+    "index.js": {
+      "maxDuration": 30
+    }
+  }
 }

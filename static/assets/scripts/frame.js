@@ -20,8 +20,8 @@ function iframeLoad() {
     if (website.includes('/y/') || website.includes('/f/')) {
       document.getElementById('is').value = ''
     } else {
-      const website = iframe.contentWindow?.location.href.replace(window.location.origin, '').replace('/a/', '')
-      document.getElementById('is').value = decodeXor(website)
+      const website = iframe.contentWindow?.location.href.replace(window.location.origin, '').replace('/v/', '')
+      document.getElementById('is').value = website
     }
   }
 }
